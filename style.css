@@ -1,0 +1,104 @@
+:root {
+  --clr-white: hsl(0, 100%, 100%);
+  --clr-bg: hsl(203, 100%, 76%);
+  --clr-secondary: lightgreen;
+  --clr-vr: hsl(0, 0%, 62%);
+  --default-line-height: 20px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body > div {
+  background-color: var(--clr-bg);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--clr-white);
+  margin: 0;
+  padding: 40px;
+  margin: 40px;
+  border: 3px solid var(--clr-secondary);
+}
+
+p {
+  font-size: 1.2em;
+}
+
+div > header,
+nav > ul,
+footer > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav > ul {
+  gap: 10px;
+}
+
+nav > ul > li,
+footer > div > ul > li {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+footer > div > ul > li {
+  color: var(--clr-secondary);
+  text-decoration: underline;
+}
+
+nav > ul > li:nth-child(1) {
+  color: var(--clr-white);
+}
+
+nav > ul > div::after,
+footer > div > ul > div::after {
+  content: " ";
+  display: block;
+  width: 2px;
+  height: var(--default-line-height);
+  background-color: var(--clr-vr);
+  padding: 0;
+  margin: 0;
+}
+
+nav > ul > li:nth-child(3) {
+  color: var(--clr-secondary);
+  text-decoration: underline;
+}
+
+main > div > aside > img {
+  width: 200px;
+}
+main > div > article > img {
+  width: 200px;
+  float: right;
+  shape-outside: circle(59.29% at 86px 126px);
+}
+
+footer > div > ul {
+  flex-grow: 0.1;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#skip-to-content {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute;
+  font-size: 1.5em;
+  color: var(--clr-white);
+}
+#skip-to-content:focus {
+  clip: initial;
+  top: 65px;
+}
