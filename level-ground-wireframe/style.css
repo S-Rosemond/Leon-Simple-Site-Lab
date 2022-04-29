@@ -94,6 +94,10 @@ a {
 
 .bg-footer {
   background-color: var(--clr-footer);
+  color: white;
+}
+
+.clr-primary {
   color: var(--clr-primary);
 }
 
@@ -206,18 +210,35 @@ a {
   padding-bottom: 6.25em;
 }
 
-.section-container-pd-sides {
-  padding-left: 6.25em;
-  padding-right: 6.25em;
-}
-
 .section-top-padding {
   padding-top: 3.125em;
 }
+
+.f-container {
+  padding: 2rem 6rem;
+}
+
+.f-spacing-y {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.hr-margin {
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+
 #use-play-circle {
   width: 1.5625em;
   height: 1.875em;
   top: -0.4375em;
+}
+
+#use-fb_meta,
+#use-twitter,
+#use-email {
+  width: 1.5625em;
+  height: 1.875em;
 }
 
 /* todo fix padding ratios */
