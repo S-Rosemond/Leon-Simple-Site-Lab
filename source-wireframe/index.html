@@ -15,11 +15,16 @@
   </head>
   <body>
     <header
-      class="ds-flex align-center-all text-center nav-min-ht nav-m-bottom"
+      class="ds-flex align-center-all text-center nav-min-ht nav-m-bottom pos-relative"
     >
-      <h3 id="brand" class="flex-half">Source</h3>
+      <div id="use_menu_container" class="mobile-show">
+        <svg viewBox="0 0 16 16">
+          <use xlink:href="#menu" href="#menu"></use>
+        </svg>
+      </div>
+      <h3 id="brand" class="flex-half cursor-pointer">Source</h3>
 
-      <nav class="flex-1">
+      <nav class="flex-1 mobile-hide">
         <ul>
           <li>
             <a href="#">First Link</a>
@@ -36,7 +41,7 @@
         </ul>
       </nav>
 
-      <div class="flex-half ds-flex justify-center .">
+      <div class="flex-half ds-flex justify-center mobile-hide">
         <button class="btn btn-border-none btn-padding-large btn-secondary">
           Button
         </button>
@@ -50,7 +55,7 @@
       >
         <h2>Source helps creators do more of what they love</h2>
 
-        <div class="flex-mobile-column">
+        <div class="flex-mobile-column searchbar-wrapper">
           <input
             type="search"
             name=""
@@ -125,8 +130,8 @@
       </div>
     </section>
 
-    <main class="bg-white main-ht">
-      <article class="main-margin">
+    <main class="bg-white main-ht ds-flex">
+      <article class="main-margin ds-flex flex-column gap-1em">
         <h1>Collecting information about the problem</h1>
         <p>
           In the context of information architecture, information is separate
@@ -199,6 +204,21 @@
             />
             <path
               d="m2.125 8.567-1.86.992a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882l-1.86-.992-5.17 2.756a1.5 1.5 0 0 1-1.41 0l-5.17-2.756z"
+            />
+          </g>
+          <g
+            id="menu"
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-list"
+            viewBox="0 0 16 16"
+          >
+            <title>Menu button</title>
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
             />
           </g>
         </defs>
