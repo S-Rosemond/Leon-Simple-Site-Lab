@@ -17,7 +17,7 @@
     <header
       class="ds-flex align-center-all text-center nav-min-ht nav-m-bottom"
     >
-      <h3 class="flex-half">Source</h3>
+      <h3 id="brand" class="flex-half">Source</h3>
 
       <nav class="flex-1">
         <ul>
@@ -36,18 +36,21 @@
         </ul>
       </nav>
 
-      <div class="flex-half ds-flex justify-center">
+      <div class="flex-half ds-flex justify-center .">
         <button class="btn btn-border-none btn-padding-large btn-secondary">
           Button
         </button>
       </div>
     </header>
 
-    <section class="ds-flex">
-      <div class="ds-flex flex-column padding-x-1">
+    <section class="flex-mobile-column">
+      <div
+        id="searchbar-container"
+        class="flex-1 ds-flex flex-column padding-x-1 gap-1em"
+      >
         <h2>Source helps creators do more of what they love</h2>
 
-        <div class="ds-flex justify-center">
+        <div class="flex-mobile-column">
           <input
             type="search"
             name=""
@@ -56,7 +59,7 @@
           />
           <button
             id="search-btn"
-            class="btn btn-padding-large btn-border-none btn-secondary"
+            class="btn btn-padding-large btn-border-none btn-secondary btn-font-sm"
           >
             Button
           </button>
@@ -67,12 +70,12 @@
         </p>
       </div>
 
-      <div>
+      <div class="flex-1">
         <img src="./Source_Logo.PNG" alt="" />
       </div>
     </section>
 
-    <section class="ds-flex gap-1em text-cards-margin">
+    <section class="flex-mobile-column gap-1em text-cards-margin">
       <div class="text-cards">
         <svg width="16" height="16">
           <use xlink:href="#globe" href="#globe"></use>
@@ -122,12 +125,14 @@
       </div>
     </section>
 
-    <main>
-      <h1>Collecting information about the problem</h1>
-      <p>
-        In the context of information architecture, information is separate from
-        both knowledge and data, and lies nebulously between them.
-      </p>
+    <main class="bg-white main-ht">
+      <article class="main-margin">
+        <h1>Collecting information about the problem</h1>
+        <p>
+          In the context of information architecture, information is separate
+          from both knowledge and data, and lies nebulously between them.
+        </p>
+      </article>
     </main>
 
     <div class="hide">
