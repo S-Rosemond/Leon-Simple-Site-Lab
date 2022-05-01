@@ -1,9 +1,11 @@
 /* Floats required per instructions */
+/* class 10 flex box was allowed */
 
 :root {
   --clr-primary: hsl(200, 32%, 98%);
   --clr-primary-light: hsl(0, 0%, 91%);
-  --clr-primary-darker: hsl(200, 19%, 84%);
+  --clr-primary-dark: hsl(200, 19%, 84%);
+  --clr-primary-darker: hsl(193.3, 3.8%, 53.9%);
   --clr-secondary: hsl(216, 56%, 7%);
 }
 
@@ -39,13 +41,23 @@ html:focus-within {
 body {
   background-color: var(--clr-primary);
   color: var(--clr-secondary);
-  font-size: 20px;
+  font-family: "Roboto", sans-serif;
 }
 
 a {
   cursor: pointer;
   color: inherit;
   text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+nav > ul > li {
+  display: inline-block;
+  margin: 0 1em;
+  color: var(--clr-primary-darker);
 }
 
 .over-flow-auto {
@@ -98,24 +110,49 @@ a {
   color: var(--clr-secondary);
 }
 
-.clear-fix {
-  clear: both;
+.ds-flex {
+  display: flex;
 }
 
-.float-rt {
-  float: right;
+.flex-column {
+  flex-direction: column;
 }
 
-.float-lt {
-  float: left;
+.flex-1 {
+  flex: 1;
 }
 
-.float-layout-even {
-  width: 50%;
+.flex-half {
+  flex: 0.5;
+}
+
+.gap-1em {
+  gap: 1em;
+}
+
+.align-center-all {
+  justify-content: center;
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .text-center {
   text-align: center;
+}
+
+.nav-min-ht {
+  min-height: 4.375em;
+}
+
+.nav-m-bottom {
+  margin-bottom: 1.875em;
+}
+
+.v-center-sm {
+  margin: 0.5em 0;
 }
 
 .font-wt-400 {
@@ -124,4 +161,82 @@ a {
 
 .min-ht-500 {
   min-height: 31.25em;
+}
+
+.padding-x-1 {
+  padding: 0 1em;
+}
+
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.25rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-border-none {
+  border: 0px;
+}
+
+.btn-padding-default {
+  padding: 0.5em 1em;
+}
+
+.btn-padding-large {
+  padding: 0.5em 2em;
+}
+
+.btn-padding-box {
+  padding: 1.25em 3.125em;
+}
+
+.btn-round {
+  border-radius: 0.25rem;
+}
+
+.btn-secondary {
+  background-color: var(--clr-secondary);
+  color: white;
+}
+
+.text-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625em;
+}
+
+.text-cards-margin {
+  margin: 2em 6em;
+}
+
+#searchbar {
+  min-width: 45ch;
+  height: 2.75rem;
+  border: 0px;
+  background-color: var(--clr-primary-dark);
+  padding-left: 1rem;
+}
+
+@media (min-width: 768px) {
+  #searchbar {
+  }
+
+  #search-btn {
+  }
+}
+
+@media (max-width: 768px) {
+  .clear-float {
+    float: initial;
+    width: inherit;
+  }
+
+  img[src="./Source_Logo.PNG"] {
+    padding-left: 1.25rem;
+  }
+
+  .btn-mobile-full {
+    width: 100%;
+  }
 }
