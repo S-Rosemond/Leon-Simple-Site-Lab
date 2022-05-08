@@ -10,154 +10,186 @@
       href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Mithun Cuisinet</title>
   </head>
   <body>
-    <header class="container">
-      <nav class="ds-flex">
-        <ul class="ds-flex padding-zero">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">Order Now</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Location</a></li>
-        </ul>
+    <header class="bg-image-cover banner-height">
+      <section class="revert-bg-image-cover">
+        <nav class="ds-flex nav-flex-pos pd-contain-2">
+          <ul class="ds-flex padding-zero nav-flex-group-1">
+            <li><a href="#">Home</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Order Now</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Location</a></li>
+          </ul>
 
-        <ul class="ds-flex padding-zero">
-          <li>
-            <svg class="nav-icon" viewBox="0 0 16 16">
-              <use xlink:href="#shopping-cart-3" href="#shopping-cart-3"></use>
-            </svg>
-          </li>
-          <li>
-            <svg class="nav-icon" viewBox="0 0 16 16">
-              <use
-                xlink:href="#magnifying-glass"
-                href="#magnifying-glass"
-              ></use>
-            </svg>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
-    <section class="container">
-      <div>
-        <h1>Welcome To Our Cuisine Restaurant</h1>
-
-        <form class="ds-flex">
-          <input
-            type="search"
-            name=""
-            id="search-bar"
-            placeholder="search here"
-          />
-
-          <div class="pos-relative ds-flex align-center">
-            <label for="location">
-              <select name="location" id="location" class="btn-select">
-                <option value="">Location</option>
-                <option value="">Location 1</option>
-                <option value="">Location 2</option>
-                <option value="">Location 3</option>
-                <option value="">Location 4</option>
-              </select>
-            </label>
-            <span id="caret-down-container" class="pos-absolute">
-              <svg fill="white" class="select-icon" viewBox="0 0 16 16">
+          <ul class="ds-flex padding-zero nav-flex-group-2">
+            <li>
+              <svg class="nav-icon" viewBox="0 0 16 16">
                 <use
-                  xlink:href="#caret-down-fill"
-                  href="#caret-down-fill"
+                  xlink:href="#shopping-cart-3"
+                  href="#shopping-cart-3"
                 ></use>
               </svg>
-            </span>
-          </div>
-        </form>
-
-        <aside>
-          <ul class="ds-flex gap-m-1 padding-zero">
-            <li class="ds-flex gap-sm">
-              <svg class="nav-icon colored-icon" viewBox="0 0 16 16">
-                <use xlink:href="#i_facebook" href="#i_facebook"></use>
-              </svg>
-              <span class="font-sz-1">252k</span>
             </li>
-            <li class="ds-flex gap-sm">
-              <svg class="nav-icon colored-icon" viewBox="0 0 16 16">
-                <use xlink:href="#i_twitter" href="#i_twitter"></use>
+            <li>
+              <svg class="nav-icon" viewBox="0 0 16 16">
+                <use
+                  xlink:href="#magnifying-glass"
+                  href="#magnifying-glass"
+                ></use>
               </svg>
-              <span class="font-sz-1">62k</span>
-            </li>
-            <li class="ds-flex gap-sm">
-              <svg class="nav-icon colored-icon" viewBox="0 0 16 16">
-                <use xlink:href="#instagram" href="#instagram"></use>
-              </svg>
-              <span class="font-sz-1">55K</span>
             </li>
           </ul>
-        </aside>
-      </div>
+        </nav>
 
-      <aside>
-        <img src="" alt="" />
-      </aside>
-    </section>
+        <section class="container">
+          <div class="ds-flex-column gap-m-1">
+            <h1 class="font-size-4 banner-title">
+              Welcome To Our Cuisine Restaurant
+            </h1>
 
-    <main class="container">
-      <aside>
-        <img src="" alt="" />
-      </aside>
+            <form class="ds-flex">
+              <input
+                type="search"
+                name=""
+                id="search-bar"
+                placeholder="search here"
+              />
 
-      <div>
-        <h2>Discover Our Restaurant's Story</h2>
+              <div class="pos-relative ds-flex align-center">
+                <label for="location">
+                  <select name="location" id="location" class="btn-select">
+                    <option value="">Location</option>
+                    <option value="">Location 1</option>
+                    <option value="">Location 2</option>
+                    <option value="">Location 3</option>
+                    <option value="">Location 4</option>
+                  </select>
+                </label>
+                <span id="caret-down-container" class="pos-absolute">
+                  <svg fill="white" class="select-icon" viewBox="0 0 16 16">
+                    <use
+                      xlink:href="#caret-down-fill"
+                      href="#caret-down-fill"
+                    ></use>
+                  </svg>
+                </span>
+              </div>
+            </form>
 
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
-          nulla suscipit earum. Dolores voluptatibus quam quas aliquam
-          voluptatem iste corporis? Harum eum commodi, inventore quisquam nisi
-          similique rerum dolor eos saepe voluptates quos id esse magnam vero
-          hic nihil nobis incidunt iste aliquam dignissimos aperiam facilis? Sed
-          reprehenderit at sunt obcaecati dolore veritatis mollitia ex
-          aspernatur illum incidunt? Possimus dolor iure natus! Ullam, pariatur
-          quam repudiandae, dolorum voluptas ipsum amet labore nostrum enim illo
-          possimus soluta molestiae doloribus maxime harum ipsa facilis corrupti
-          quasi? Consequatur, a error, modi minima cupiditate est earum quo
-          atque quaerat blanditiis esse doloribus. Quod, iusto.
-        </p>
+            <aside>
+              <ul class="ds-flex gap-m-1 padding-zero">
+                <li class="ds-flex gap-sm">
+                  <a href="#">
+                    <svg class="nav-icon colored-icon" viewBox="0 0 16 16">
+                      <use xlink:href="#i_facebook" href="#i_facebook"></use>
+                    </svg>
+                  </a>
 
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
-          adipisci aperiam ut consectetur id, omnis tenetur perferendis eum
-          accusamus placeat natus hic temporibus dicta ipsum? Fuga provident et
-          corrupti harum eius officiis exercitationem cumque sed error quaerat
-          amet quo dolorum est laborum voluptatem totam eaque, repellat, numquam
-          eos? Eligendi, hic!
-        </p>
+                  <span class="font-sz-1">252k</span>
+                </li>
+                <li class="ds-flex gap-sm">
+                  <a href="#">
+                    <svg class="nav-icon colored-icon" viewBox="0 0 16 16">
+                      <use xlink:href="#i_twitter" href="#i_twitter"></use>
+                    </svg>
+                  </a>
 
-        <button>Discover Menu</button>
-        <span>svg arrow</span>
-      </div>
+                  <span class="font-sz-1">62k</span>
+                </li>
+                <li class="ds-flex gap-sm">
+                  <a href="#">
+                    <svg class="nav-icon colored-icon" viewBox="0 0 16 16">
+                      <use xlink:href="#instagram" href="#instagram"></use>
+                    </svg>
+                  </a>
+
+                  <span class="font-sz-1">55K</span>
+                </li>
+              </ul>
+            </aside>
+          </div>
+        </section>
+      </section>
+    </header>
+
+    <main class="bg-pie">
+      <section class="wrapper-top">
+        <div class="ds-flex-column gap-m-1">
+          <h2 class="font-size-3">Discover Our Restaurant's Story</h2>
+
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Perspiciatis nulla suscipit earum. Dolores voluptatibus quam quas
+            aliquam voluptatem iste corporis? Harum eum commodi, inventore
+            quisquam nisi similique rerum dolor eos saepe voluptates quos id
+            esse magnam vero hic nihil nobis incidunt iste aliquam dignissimos
+            aperiam facilis? Sed reprehenderit at sunt obcaecati dolore
+            veritatis mollitia ex aspernatur illum incidunt? Possimus dolor iure
+            natus! Ullam, pariatur quam repudiandae, dolorum voluptas ipsum amet
+            labore nostrum enim illo possimus soluta molestiae doloribus maxime
+            harum ipsa facilis corrupti quasi? Consequatur, a error, modi minima
+            cupiditate est earum quo atque quaerat blanditiis esse doloribus.
+            Quod, iusto.
+          </p>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+            adipisci aperiam ut consectetur id, omnis tenetur perferendis eum
+            accusamus placeat natus hic temporibus dicta ipsum? Fuga provident
+            et corrupti harum eius officiis exercitationem cumque sed error
+            quaerat amet quo dolorum est laborum voluptatem totam eaque,
+            repellat, numquam eos? Eligendi, hic!
+          </p>
+
+          <div>
+            <button class="btn btn-border-none btn-secondary">
+              Discover Menu
+            </button>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <section class="container">
-      <p>Order Online Now</p>
-      <h2>Our Specility Cuisine</h2>
+    <section class="container wrapper-top ds-flex-column align-center gap-sm">
+      <p class="clr-primary-light">Order Online Now</p>
+      <h2 class="font-size-3">Our Specility Cuisine</h2>
 
-      <ul class="ds-flex padding-zero">
-        <li>Breakfast</li>
-        <li>Lunch</li>
-        <li>Dinner</li>
-        <li>Dessert</li>
-        <li>Shake</li>
+      <ul class="ds-flex padding-zero gap-m-1">
+        <li class="pos-relative parent-hr-after">
+          Breakfast<span class="hr-after"></span>
+        </li>
+
+        <li class="pos-relative parent-hr-after">
+          Lunch <span class="hr-after"></span>
+        </li>
+
+        <li class="pos-relative parent-hr-after">
+          Dinner <span class="hr-after"></span>
+        </li>
+
+        <li class="pos-relative parent-hr-after">
+          Dessert <span class="hr-after"></span>
+        </li>
+
+        <li class="pos-relative parent-hr-after">
+          Shake <span class="hr-after"></span>
+        </li>
       </ul>
 
-      <ul>
-        <li>imgs</li>
-        <li></li>
-        <li></li>
-        <li></li>
+      <ul class="ds-flex gap-sm">
+        <li><img src="./img/img_1.PNG" alt="" /></li>
+        <li><img src="./img/img_2.PNG" alt="" /></li>
+        <li><img src="./img/img_3.PNG" alt="" /></li>
+        <li><img src="./img/img_1.PNG" alt="" /></li>
       </ul>
     </section>
 
@@ -214,3 +246,9 @@
     </div>
   </body>
 </html>
+
+<!-- Photos by <a href="https://unsplash.com/@brookelark?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Brooke Lark</a> on <a href="https://unsplash.com/s/photos/fruits-restaurant?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+   -->
+
+<!-- 2/08/22 is 5/3/22 for me -->
+<!-- Due 5/12 -->
