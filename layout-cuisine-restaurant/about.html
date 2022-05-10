@@ -4,35 +4,52 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>About Mithun's restaurant</title>
   </head>
   <body>
-    <header>
-      <p>Book Table</p>
-      <h2>Opening Hours</h2>
+    <header class="ds-flex-column gap-sm align-center container wrapper-top">
+      <p class="clr-primary-light">Book Table</p>
+      <h2 class="font-size-3">Opening Hours</h2>
     </header>
 
-    <section>
+    <section class="ds-flex-column gap-sm align-center container">
       <div>svg</div>
-      <p>Call Now</p>
-      <h2>+12345 678 910</h2>
+      <p class="font-w-bold">Call Now</p>
+      <h2 class="clr-primary font-size-2 font-w-bold">+12345 678 910</h2>
     </section>
 
-    <section>
+    <section class="ds-flex gap-sm align-center justify-evenly container">
       <div>
         <p>Monday to Tuesday</p>
-        <h3>09:00am to 22:00pm</h3>
+        <p class="font-sz-1-sm-em font-w-bold">09:00am to 22:00pm</p>
       </div>
       <div>
         <p>Friday to Sunday</p>
-        <p>11:00am to 20:00pm</p>
+        <p class="font-sz-1-sm-em font-w-bold">11:00am to 20:00pm</p>
       </div>
     </section>
 
-    <section>img</section>
-    <section>
-      <p>Testimonials</p>
-      <h2>Customer Say</h2>
+    <section class="ds-flex-column gap-sm align-center container">
+      <img
+        id="snack-bowl-img"
+        src="./img/brooke-lark-GwNsgnSAfQM-unsplash-snackbowl.jpg"
+        alt=""
+      />
+    </section>
+    <section class="ds-flex-column gap-sm align-center container text-center">
+      <p class="clr-primary-light">Testimonials</p>
+      <h2 class="font-size-3">Customer Say</h2>
       <img src="" alt="" />
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore officiis
@@ -41,5 +58,11 @@
         tempore.
       </p>
     </section>
+
+    <div class="ds-flex align-center-all gap-m-1">
+      <span class="hr-c"></span><span class="hr-c"></span
+      ><span class="hr-c"></span><span class="hr-c"></span
+      ><span class="hr-c"></span>
+    </div>
   </body>
 </html>
